@@ -9,25 +9,54 @@
 </head>
 
 <body>
-<div class="headerH">
+<div class="headerB">
 	<!-- Nav -->
 	<div class="navRibbon">
 		<a href="index.html"><img src="images/Logo.png" class="logo mw200 pl2" alt="Ernesto's Barber Shop logo"></a>
 		<!--hamburger icon-->
-		<div class="hamburgerMenu" onclick="myFunction(this)">
+		<div class="hamburgerMenu" id="menu" onclick="openMenu(this)">
 			<div class="barA"></div>
 			<div class="barB"></div>
 			<div class="barC"></div>
+			<ul class="hamMenu" id="menu-box" style="display: none">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="barbers.html">Barbers</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</div>
+		<div class="topnav" id="myTopnav">
+			<a href="index.html" class="active">Home</a>
+			<a href="barbers.html">Barbers</a>
+			<a href="services.html">Services</a>
+			<a href="gallery.html">Gallery</a>
+			<a href="contact.html">Contact Us</a>
+			<a href="javascript:void(0);" class="icon" onclick="desktopNav()">
+			</a>
 		</div>
 		<script>
-			function myFunction(x) {
+			function openMenu(x) {
 				x.classList.toggle("change");
-		}
+				var menuBox = document.getElementById('menu-box');
+				if (menuBox.style.display == "none") { // if is menuBox displayed, hide it
+					menuBox.style.display = "block";
+				}
+				else { // if is menuBox hidden, display it
+					menuBox.style.display = "none";
+				}
+			}
+			function desktopNav() {
+				var y = document.getElementById("myTopnav");
+				if (y.className === "topnav") {
+				} else {
+					y.className = "topnav";
+				}
+			}
 		</script>
 	</div>
 	<div class="ta pt5">
-		<h1 class="gold">Schedule an Appointment</h1>
-		<h2 class="gold">Hector</h2>
+		<h1 class="gold">Hector's Calendar</h1>
 	</div>
 </div>
 
