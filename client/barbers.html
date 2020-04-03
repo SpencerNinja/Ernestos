@@ -14,15 +14,32 @@
 	<div class="navRibbon">
 		<a href="index.html"><img src="images/Logo.png" class="logo mw200 pl2" alt="Ernesto's Barber Shop logo"></a>
 		<!--hamburger icon-->
-		<div class="hamburgerMenu" onclick="myFunction(this)">
+		<div class="hamburgerMenu" onclick="myFunctionA(this)">
 			<div class="barA"></div>
 			<div class="barB"></div>
 			<div class="barC"></div>
 		</div>
+		<div class="topnav" id="myTopnav">
+			<a href="index.html">Home</a>
+			<a href="barbers.html" class="active">Barbers</a>
+			<a href="services.html">Services</a>
+			<a href="gallery.html">Gallery</a>
+			<a href="contact.html">Contact Us</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunctionB()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
 		<script>
-			function myFunction(x) {
+			function myFunctionA(x) {
 				x.classList.toggle("change");
-		}
+			}
+			function myFunctionB() {
+				var y = document.getElementById("myTopnav");
+				if (y.className === "topnav") {
+				} else {
+					y.className = "topnav";
+				}
+			}
 		</script>
 	</div>
 	<div class="ta pt5">
@@ -34,47 +51,46 @@
 	<div class="mb50">
 		<img src="images/Ernesto.jpg" alt="Ernesto" class="mw300">
 		<h3 class="mtb0">Ernesto</h3>
-		<a href=""><button class="buttonBG">Schedule an Appointment</button></a>
+		<a href="ernesto.html"><button class="buttonBG">Schedule an Appointment</button></a>
 	</div>
 	<div class="mb50">
 		<img src="images/" alt="Hector" class="mw300">
 		<h3 class="mtb0">Hector</h3>
-		<a href=""><button class="buttonBG">Schedule an Appointment</button></a>
+		<a href="hector.html"><button class="buttonBG">Schedule an Appointment</button></a>
 	</div>
 	<div class="mb50">
 		<img src="images/" alt="Santiago" class="mw300">
 		<h3 class="mtb0">Santiago</h3>
-		<a href=""><button class="buttonBG">Schedule an Appointment</button></a>
+		<a href="santiago.html"><button class="buttonBG">Schedule an Appointment</button></a>
 	</div>
 	<div class="mb50">
 		<img src="images/ma.jpg" alt="Ma" class="mw300">
 		<h3 class="mtb0">Ma</h3>
-		<a href=""><button class="buttonBG">Schedule an Appointment</button></a>
+		<a href="ma.html"><button class="buttonBG">Schedule an Appointment</button></a>
 	</div>
 	<div class="mb50">
 		<img src="images/" alt="Bryan" class="mw300">
 		<h3 class="mtb0">Bryan</h3>
-		<a href=""><button class="buttonBG">Schedule an Appointment</button></a>
+		<a href="bryan.html"><button class="buttonBG">Schedule an Appointment</button></a>
 	</div>
 </div>
 
 <footer>
-	<div class='row'>
-    <div class='column'>
-    	<a href="index.html" class="footText"><p class="black fs20 fw400 mtb0">Ernesto's Barber Shop</p></a>
-		<a href="barbers.html" class="footText"><p class="black fs20 fw400 mtb0">Barbers</p></a>
-		<a href="services.html" class="footText"><p class="black fs20 fw400 mtb0">Services</p></a>
-		<a href="gallery.html" class="footText"><p class="black fs20 fw400 mtb0">Gallery</p></a>
-		<a href="contact.html" class="footText"><p class="black fs20 fw400 mtb0">Contact Us</p></a>
-    </div>
-    <div class='column'>
-	    <a href="https://goo.gl/maps/ztRfXqkBwfpJSMua8" class="footText"><address class="black fs20 fw400 mtb0">15 S Bluff St<br> 
-		St. George, UT 84770</address></a>
-		<a href="tel:435-216-2715" class="footText"><p class="black fs20 fw400 mtb0">(435) 216-2715</p></a>
-		<a href="https://www.facebook.com/Ernestos-Barber-Shop-and-Beauty-Sal%C3%B3n-1424554244426439/" class="footText mtb0"><p class="black fs20 fw400 mtb0">Visit us on Facebook<!-- Social Media icons --></p></a>
-    </div>
-  </div>
-
+	<div class='row ptb2'>
+	    <div class='column'>
+	    	<a href="index.html" class="footText"><p class="black fw400 mtb0">Ernesto's Barber Shop</p></a>
+			<a href="barbers.html" class="footText"><p class="black fw400 mtb0">Barbers</p></a>
+			<a href="services.html" class="footText"><p class="black fw400 mtb0">Services</p></a>
+			<a href="gallery.html" class="footText"><p class="black fw400 mtb0">Gallery</p></a>
+			<a href="contact.html" class="footText"><p class="black fw400 mtb0">Contact Us</p></a>
+	    </div>
+	    <div class='column'>
+		    <a href="https://goo.gl/maps/ztRfXqkBwfpJSMua8" class="footText"><address class="black fw400 mtb0">15 S Bluff St<br> 
+			St. George, UT 84770</address></a>
+			<a href="tel:435-216-2715" class="footText"><p class="black fw400 mtb0">(435) 216-2715</p></a>
+			<a href="https://www.facebook.com/Ernestos-Barber-Shop-and-Beauty-Sal%C3%B3n-1424554244426439/" class="footText mtb0"><p class="black fs20 fw400 mtb0">Visit us on Facebook<!-- Social Media icons --></p></a>
+	    </div>
+  	</div>
 </footer>
 
 </body>
