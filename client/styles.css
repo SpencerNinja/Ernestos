@@ -143,6 +143,7 @@
   grid-template-rows: 115px 180px 100px 195px 100px 195px 100px 165px;
   width: 100%;
   justify-content: center;
+  grid-gap: 15px;
 }
 .gridItemH1 { 
   grid-column: 1;
@@ -495,6 +496,7 @@ footer {
   text-decoration: none;
   font-weight: 400;
   padding-left: 20px;
+  font-size: 1.5em;
 }
 .fw100 {
   font-weight: 100;
@@ -525,6 +527,19 @@ footer {
 }
 .fs22 {
   font-size: 22px;
+}
+.relText {
+  position: relative;
+  z-index: 1;
+}
+div a address:hover {
+  color: #800000;
+}
+div a p:hover {
+  color: #800000;
+}
+div a:hover {
+  color: #800000;
 }
 
 
@@ -569,7 +584,7 @@ h3 {
 .w50p {
   width: 50%;
 }
-. {
+.h100p {
   height: 100%;
 }
 .mw100p {
@@ -732,7 +747,7 @@ nav a {
   color: #ffffff;
 }
 img:hover {
-  opacity: 0.5;
+  opacity: 0.75;
 }
 
 
