@@ -346,27 +346,31 @@
 .headerH { /* Homepage Header */
   width: 100%;
   height: 400px;
+  background-size: contain;
   background-image: url("images/pexels-photo-1570806.jpg");
 }
 .headerB { /* Barbers Page Header */
   width: 100%;
   height: 400px;
   background-image: url("images/pexels-photo-1319459.jpeg");
+  background-size: contain;
 }
 .headerG { /* Gallery Header */
   width: 100%;
   height: 400px;
-  object-fit: contain;
+  background-size: contain;
   background-image: url("images/pexels-photo-1485993.jpeg");
 }
 header .services {
   width: 100%;
   height: 400px;
+  background-size: contain;
   background-image: url("images/pexels-photo-1319460.jpeg");
 }
 header .contact {
   width: 100%;
   height: 400px;
+  background-size: contain;
   background-image: url("images/pexels-photo-3162022wide.jpg");
 }
 .ribbon {
